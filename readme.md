@@ -27,13 +27,19 @@
 
 ## 安装/学习`制谱软件`
 
-- 安装[muse2.70 pro](http://www.hanchuang.net/forum.php?mod=viewthread&tid=9712)`脚本制谱软件`；
+- 安装[muse2.70 pro](http://www.hanchuang.net/forum.php?mod=viewthread&tid=9712)；
 
   - 退出当前杀毒软件：由于`破解注册机`会读取系统硬件驱动信息；
+    - 为何使用此盗版：原作者在10+年以前由于盗版泛滥的原因已经不再维护此软件，网上也无提供正版license途径，现在只能使用注册机，也提醒大家尽量不要使用盗版软件，像这款20年前就开发好的软件没人维护实在可惜；╮(╯▽╰)╭
   - 下载本工程![1550479332840](media/1550479332840.png)
 
   - 使用解压软件提取`chord1353-master.zip`(不要使用`360压缩`，可能会误删除)；
-  - 点击`bin/muse2.70 注册机.exe`，
+
+  - 点击`bin/muse2.70 注册机.exe`->根据显示注册码，点击`帮助->输入注册码`，复制粘贴；
+
+    ![](/media/op1.gif)
+
+    
 
 ## 学习语法规则
 
@@ -72,7 +78,7 @@ w: *下祝福欢欣喜乐 光明与我永同在。
 
 
 
-# 其他的在线脚本
+# 其他的脚本制谱软件
 
 [latex musixtex插件](https://blog.csdn.net/u012136352/article/details/80027125)
 
