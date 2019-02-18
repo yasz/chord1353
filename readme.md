@@ -18,7 +18,21 @@
 
 # 如何为此项目贡献
 
-通过文本编辑器编辑和声，在windows里其实就是notepad ，或者你自己下载的一些软件入notepad++，ue；理解为txt文件编辑器；
+本项目是通过`文本编辑器`来编辑和声谱，在windows系统自带的编辑软件是`notepad` ，你也可以下载的一些类似的软入`notepad++`，`subline`等；
 
 
+
+接下来我们需要了解`和弦标记`的语法规则；
+
+
+
+[latex musixtex插件](https://blog.csdn.net/u012136352/article/details/80027125)
+
+[vexTab](https://www.52cmajor.com/doc?doc=vextab)
+
+![img](https://img3.doubanio.com/view/group_topic/large/public/p101500172.jpg)
+
+https://github.com/paulrosen/abcjs
+
+注册码`2362125187`
 
