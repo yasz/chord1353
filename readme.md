@@ -16,15 +16,63 @@
 
 
 
-# 如何为此项目贡献
+# 制谱流程
 
-本项目是通过`文本编辑器`来编辑和声谱，在windows系统自带的编辑软件是`notepad` ，你也可以下载的一些类似的软入`notepad++`，`subline`等；
+- 安装/学习`制谱软件`：并通过`模板脚本`快速学习制谱脚本`语法规则`以及`基本功能`；
+- 制作：按照领取的诗歌分配目录制作`和弦脚本`，文件名按照`诗歌序号`命名(如 `001.jsx`、`123.jsx`)；
+- 提交：制作完成后，将脚本统一放在一个文件夹中，并以`诗歌序号区间`命名 (如`001-030.zip`），或发送到微信群；
+  - 也可安装git协同软件，直接不解压缩提交到本项目下的`/score/`目录，这样更方便；
 
 
 
-接下来我们需要了解`和弦标记`的语法规则；
+## 安装/学习`制谱软件`
+
+- 安装[muse2.70 pro](http://www.hanchuang.net/forum.php?mod=viewthread&tid=9712)`脚本制谱软件`；
+
+  - 退出当前杀毒软件：由于`破解注册机`会读取系统硬件驱动信息；
+  - 下载本工程![1550479332840](media/1550479332840.png)
+
+  - 使用解压软件提取`chord1353-master.zip`(不要使用`360压缩`，可能会误删除)；
+  - 点击`bin/muse2.70 注册机.exe`，
+
+## 学习语法规则
+
+启动ctrl + o 打开`模板脚本`
+
+```
+T: 欢乐颂 %% 标题
+C: 曲:Ludwig van Bethoven %% 作者信息
+C: 词:洪启元 %% 作者信息
+M: 4/4 %% 节拍
+K: C %% 调号
+V:1 style=jianpu %% 音轨，不需要修改
+[V:1] %% 表示后面的内容都是音轨1，不需要修改
+
+"C" E E F G |"G" G F E D |"C" C C D E |"G" E > D D2 |
+w: 欢欣欢欣齐来敬拜 荣耀慈爱大主宰
+
+"C" E E F G |"G" G F E D |"C" C C D E |"G" D3/2 C/2 "C" C2 |
+w: 如同花朵向日绽放情 我们心向主敞开
+
+"G" D D "C" E C |"G" D E/2F/2 "C" E C |"Dm" D E/F/ E D |"C" C D G, (E |
+w: 黑暗忧愁罪恶*阴霾 靠主*大能尽驱散，赐
+
+E) E F G |"G" G F E D |"C" C C D E |"G7" D3/ C/ "C" C2 |]
+w: *下祝福欢欣喜乐 光明与我永同在。
+
+```
+
+## 基本功能
+
+- 设置`每行4小节`预览：
+
+![1550478492457](media/1550478492457.png)
+
+- 点击预览![1550478531841](media/1550478531841.png)
 
 
+
+# 其他的在线脚本
 
 [latex musixtex插件](https://blog.csdn.net/u012136352/article/details/80027125)
 
@@ -32,7 +80,5 @@
 
 ![img](https://img3.doubanio.com/view/group_topic/large/public/p101500172.jpg)
 
-https://github.com/paulrosen/abcjs
-
-注册码`2362125187`
+[abcjs](https://github.com/paulrosen/abcjs)
 
