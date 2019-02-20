@@ -1,0 +1,21 @@
+T: ${biaoti} %% 标题
+C: 曲:${qu} %% 作者信息
+C: 词:${ci} %% 作者信息
+M: ${jiepai} %% 节拍
+K: ${diaohao} %% 调号
+V:1 style=jianpu %% 音轨，不需要修改
+[V:1] %% 表示后面的内容都是音轨1，不需要修改
+
+
+
+"C" E E F G |"G" G F E D |"C" C C D E |"G" E > D D2 |
+w: 欢欣欢欣齐来敬拜 荣耀慈爱大主宰
+
+"C" E E F G |"G" G F E D |"C" C C D E |"G" D3/2 C/2 "C" C2 |
+w: 如同花朵向日绽放情 我们心向主敞开
+
+"G" D D "C" E C |"G" D E/2F/2 "C" E C |"Dm" D E/F/ E D |"C" C D G, (E |
+w: 黑暗忧愁罪恶*阴霾 靠主*大能尽驱散，赐
+
+E) E F G |"G" G F E D |"C" C C D E |"G7" D3/ C/ "C" C2 |]
+w: *下祝福欢欣喜乐 光明与我永同在。
