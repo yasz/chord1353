@@ -25,13 +25,11 @@
 
 ![1550557828865](media/1550557828865.png)
 
-- 制谱：简谱/和弦谱/贝斯谱
+- 制谱：简谱/和弦谱/贝斯谱/吉他谱
   - 本项目使用`脚本制谱`（即内容与格式分离，类似markdown），一方面将精力聚焦在制谱内容，另一方面`脚本`也可大幅增强编辑信息的`复用性`，以便于可以将更多精力聚焦在`组谱`上；
   - 具体参考下一章`制谱流程`；
 
 
-
-《 》 <>' “ "，. 。，!！
 
 
 
@@ -70,6 +68,7 @@ T: 欢乐颂 %% 标题
 C: 曲:Ludwig van Bethoven %% 作者信息
 C: 词:洪启元 %% 作者信息
 M: 4/4 %% 节拍
+L: 1/4
 K: C %% 调号
 V:1 style=jianpu %% 音轨，不需要修改
 [V:1] %% 表示后面的内容都是音轨1，不需要修改
@@ -87,6 +86,27 @@ E) E F G |"G" G F E D |"C" C C D E |"G7" D3/ C/ "C" C2 |]
 w: *下祝福欢欣喜乐 光明与我永同在。
 
 ```
+
+
+
+```
+T: 欢乐颂 %% 标题
+C: 曲:Ludwig van Bethoven %% 作者信息
+C: 词:洪启元 %% 作者信息
+M: 4/4 %% 节拍
+L: 1/4
+K: C %% 调号
+V:2 style=jianpu name="简谱"
+V:1 style= sheet name="五线谱" %%这里的顺序决定后面的顺序
+
+[V:1] %% 表示后面的内容都是音轨1，不需要修改
+ E E F G | G F E D |"C" C C D E |"G" E > D D2 |
+[V:2] %% 表示后面的内容都是音轨1，不需要修改
+"C" E E F G |"G" G F E D |"C" C C D E |"G" E > D D2 |
+
+```
+
+
 
 - 基本功能
   - 设置`每行4小节`预览：
@@ -113,16 +133,16 @@ w: *下祝福欢欣喜乐 光明与我永同在。
 
 
 
-# ZANMEISHI api
+# 批量预处理歌词
 
+- 基于`zanmeishi.com`提供的搜索api，使用chrome浏览器F12执行`script/fetch.js`：
+
+```
 https://www.zanmeishi.com/search/autosuggest/?k=qyed
 https://api.zanmeishi.com/song/text?song_id=123
+```
 
-查看`YLyric.vue`的处于函数`lyricProcessor`
-
-`/,|。|，|、|\./`，
-
-《 》 <>' “ "，. 。，!！
+基本处理函数使用`YLyric.vue`的`lyricProcessor`，
 
 ```
 function lyricProcessor(lyric) {
@@ -138,7 +158,11 @@ function lyricProcessor(lyric) {
         })
 ```
 
+另外需要导出文件
 
+`/,|。|，|、|\./`，
+
+《 》 <>' “ "，. 。，!！
 
 # F&A
 
@@ -158,3 +182,4 @@ Q：安装注册提示
 
 [abcjs](https://github.com/paulrosen/abcjs)
 
+# 
